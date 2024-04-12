@@ -14,8 +14,8 @@ src
 *.json
 !package.json
 
-# Documentation
-*.md
+# License
+LICENSE
 
-# Licenses are usually not ignored
-# LICENSE
+# Test files
+*.test.*
