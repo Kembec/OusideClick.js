@@ -23,7 +23,7 @@ jobs:
         run: |
             pnpm install
             pnpm test
-            pnpm run build --if-present 
+            pnpm run build
       - uses: JS-DevTools/npm-publish@v3.1.1
         with:
           token: ${{ secrets.TOKEN_NPM }}
