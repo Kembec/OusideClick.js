@@ -20,7 +20,10 @@ jobs:
           cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org/' 
       - name: Install dependencies
-        run: pnpm install
+        run: |
+            pnpm install
+            pnpm test
+            pnpm run build --if-present 
       - uses: JS-DevTools/npm-publish@v3.1.1
         with:
           token: ${{ secrets.TOKEN_NPM }}
