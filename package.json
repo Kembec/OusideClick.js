@@ -1,6 +1,6 @@
 {
   "name": "@kembec/outside-click-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A JavaScript utility for detecting click events outside of a specified DOM element, identified by its ID.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,9 +13,11 @@
     "url": "git+https://github.com/Kembec/OusideClick.js.git"
   },
   "keywords": [
+    "outside click",
     "outside",
     "click",
-    "javascript"
+    "javascript",
+		"Kembec"
   ],
   "author": "Kembec.com",
   "license": "AGPL-3.0",

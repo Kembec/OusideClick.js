@@ -14,14 +14,14 @@ npm install @kembec/outside-click-js
 
 ## Usage
 
-Import the `outsideClick` function and use it to specify the element ID and the callback function to be called when a click outside the specified element is detected.
+Import the `outsideClick` function from the library, specify the element ID, the callback function for outside clicks, and an optional timeout to delay the event handling. This is useful in scenarios where you may want to ensure that the DOM has completed certain updates or animations before attaching the event listener.
 
 ```javascript
 import { outsideClick } from '@kembec/outside-click-js';
 
 outsideClick('myElementId', () => {
     console.log('Clicked outside the specified element!');
-});
+}, 500); // The event handler will be attached after a 500 ms delay.
 ```
 
 
